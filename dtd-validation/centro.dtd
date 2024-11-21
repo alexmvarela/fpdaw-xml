@@ -1,0 +1,25 @@
+<!-- centro.dtd -->
+<!ELEMENT centro (ciclo+)>
+<!ATTLIST centro
+          xmlns:módulos CDATA #IMPLIED
+          xmlns:alumnos CDATA #IMPLIED>
+
+<!ELEMENT ciclo (módulos, alumnos)>
+<!ATTLIST ciclo id CDATA #REQUIRED
+                grao CDATA #REQUIRED>
+
+<!ELEMENT módulos (módulos:módulo+)>
+<!ELEMENT módulos:módulo (módulos:nome, módulos:horas)>
+<!ATTLIST módulos:módulo id CDATA #REQUIRED>
+<!ELEMENT módulos:nome (#PCDATA)>
+<!ELEMENT módulos:horas (#PCDATA)>
+
+<!ELEMENT alumnos (alumnos:alumno+)>
+<!ELEMENT alumnos:alumno (alumnos:nome, alumnos:apelidos, alumnos:datanacemento, alumnos:nota, alumnos:módulo+)>
+<!ELEMENT alumnos:nome (#PCDATA)>
+<!ELEMENT alumnos:apelidos (#PCDATA)>
+<!ELEMENT alumnos:datanacemento (#PCDATA)>
+<!ELEMENT alumnos:nota (#PCDATA)>
+<!ELEMENT alumnos:módulo EMPTY>
+<!ATTLIST alumnos:módulo id CDATA #REQUIRED
+                         nota CDATA #REQUIRED>

@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!-- centro.xml -->
+<!DOCTYPE centro SYSTEM "centro.dtd">
+<centro xmlns:módulos="http://www.iesrodeira.com/modulos" xmlns:alumnos="http://www.iesrodeira.com/alumnos">
+  <ciclo id="ASIR" grao="CS">
+
+    <módulos>
+      <módulos:módulo id="MP0370">
+        <módulos:nome>Planificación e administración de redes</módulos:nome>
+        <módulos:horas>213</módulos:horas>
+      </módulos:módulo>
+
+      <módulos:módulo id="MP0371">
+        <módulos:nome>Fundamentos hardware</módulos:nome>
+        <módulos:horas>107</módulos:horas>
+      </módulos:módulo>
+    </módulos>
+
+    <alumnos>
+      <alumnos:alumno>
+        <alumnos:nome>Xoan</alumnos:nome>
+        <alumnos:apelidos>Cancedo da Foz</alumnos:apelidos>
+        <alumnos:datanacemento>06/11/1991</alumnos:datanacemento>
+        <alumnos:nota>Xa fixo outro ciclo</alumnos:nota>
+        <alumnos:módulo id="MP0370" nota="7"/>
+        <alumnos:módulo id="MP0371" nota="8"/>
+      </alumnos:alumno>
+      
+      <alumnos:alumno>
+        <alumnos:nome>Alicia</alumnos:nome>
+        <alumnos:apelidos>Fernández Pérez</alumnos:apelidos>
+        <alumnos:datanacemento>12/08/1992</alumnos:datanacemento>
+        <alumnos:nota>Fixo ben o ciclo</alumnos:nota>
+        <alumnos:módulo id="MP0370" nota="6"/>
+        <alumnos:módulo id="MP0371" nota="7"/>
+      </alumnos:alumno>
+    </alumnos>
+
+  </ciclo>
+</centro>
